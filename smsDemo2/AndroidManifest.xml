@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.cs4730.smsdemo2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+        <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+        <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+        <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+        
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.cs4730.smsdemo2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".BinarySMSReceiver">
+             <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED"/>
+                <data android:port="8091"/>
+                <data android:scheme="sms"/>
+             </intent-filter>
+        </receiver>
+        
+    </application>
+
+    
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Data-packet widget</string>
+    <!-- String constants for Buttons -->
+    <string name="strBtNetworkSettingEnable">Enable Data-Packet</string>
+    <string name="strBtNetworkSettingDisable">Disable Data-Packet</string>
+    <string name="strWidgetBtEnable">Enable</string>
+    <string name="strWidgetBtDisable">Disable</string>
+    <string name="strWidgetBtEnableDisable">Enable/Disable</string>
+</resources>

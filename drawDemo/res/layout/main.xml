@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+<TextView android:text="Draw Demo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/labelfield"></TextView>
+
+<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:clickable="true"  android:focusableInTouchMode="true" android:focusable="true" android:id="@+id/boardfield" android:layout_gravity="center_horizontal">
+</ImageView>
+
+
+
+<LinearLayout
+	android:id="@+id/linearLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+	<Button
+  android:id="@+id/button1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Animate clear" />
+	<Button
+  android:id="@+id/button2"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Clear" />
+</LinearLayout>
+
+<LinearLayout
+	android:id="@+id/linearLayout2"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	 >
+
+    <Button
+    	android:id="@+id/save"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="Save" />
+
+    <Button
+    	android:id="@+id/load"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="Load" />
+
+</LinearLayout>
+
+</LinearLayout>

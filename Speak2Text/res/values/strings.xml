@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="hello">Hello World, Speak2TextActivity!</string>
+	<string name="app_name">Speak2Text</string>
+    <!-- ============================== -->
+    <!--  app/voice recognition examples strings  -->
+    <!-- ============================== -->
+
+    <string name="voice_recognition_prompt">This activity demonstrates the voice recognition APIs.</string>
+    <string name="speak_button">Speak!</string>
+    <string name="voice_recognition_results">Results:</string>
+	    <string name="voice_recognition">App/Voice Recognition</string>
+    <string name="supported_languages">Supported languages</string>
+    <string name="language_preference">Voice Search in Settings</string>
+    
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+          <PreferenceCategory  android:title="Blocks Options">
+                <CheckBoxPreference
+                        android:title="Sensor"
+                        android:defaultValue="false"
+                        android:summary="Move with the tilt"
+                        android:key="sensorPref" />
+                <CheckBoxPreference
+                        android:title="Swipe"
+                        android:defaultValue="true"
+                        android:summary="Swipe to move"
+                        android:key="swipePref" />
+             <EditTextPreference
+                android:key="textPref"
+                android:title="Text Value"
+                android:defaultValue=""
+                android:summary="text preference demo"
+                android:dialogTitle="Text preference example" />
+
+        <ListPreference
+                android:key="list_preference"
+                android:title="list perference"
+                android:summary="List preference demo"
+                android:entries="@array/entries_list_preference"
+                android:entryValues="@array/entryvalues_list_preference"
+                android:dialogTitle="list preference example" />
+     
+
+		</PreferenceCategory>
+  
+</PreferenceScreen>

@@ -1,0 +1,40 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:id="@+id/map2" 
+ map:cameraTilt="30"
+  map:cameraZoom="15"
+  map:mapType="hybrid"
+  map:uiCompass="true"
+  map:uiRotateGestures="true"
+  map:uiScrollGestures="false"
+  map:uiTiltGestures="true"
+  map:uiZoomControls="false"
+  map:uiZoomGestures="true"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!--        map:uiCompass="true"
+   map:mapType= "normal"
+map:uiRotateGestures="true"
+map:uiScrollGestures="true"
+map:uiTiltGestures="true"
+map:uiZoomControls="true"
+map:uiZoomGestures="true"-->
+    
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:id="@+id/textView2"
+		android:text="Scan or create a QRcode"
+		 />
+
+	   <EditText
+      android:id="@+id/edti"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="http://www.cs.uwyo.edu" >
+    </EditText>
+	
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+		<Button
+			android:id="@+id/encodei"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Encode" />
+
+  <Button
+    android:id="@+id/encodeii"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Encode Using Inegrator" />
+
+	</LinearLayout>
+
+	 <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	<Button
+		android:id="@+id/scani"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Scan" />
+
+	<Button
+		android:id="@+id/scanii"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Scan Using Inegrator" />
+  </LinearLayout>
+	<TextView
+		android:id="@+id/logtitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Logging:"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+		android:id="@+id/log"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="" />
+
+</LinearLayout>

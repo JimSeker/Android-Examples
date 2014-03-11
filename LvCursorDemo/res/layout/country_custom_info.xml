@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+ 
+    <TextView
+        android:id="@+id/textView1C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Code: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <TextView
+        android:id="@+id/textView2C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1C"
+        android:layout_below="@+id/textView1C"
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <TextView
+        android:id="@+id/textView3C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2C"
+        android:layout_below="@+id/textView2C"
+        android:text="Continent: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <TextView
+        android:id="@+id/textView4C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3C"
+        android:layout_below="@+id/textView3C"
+        android:text="Region: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <TextView
+        android:id="@+id/continentC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3C"
+        android:layout_alignBottom="@+id/textView3C"
+        android:layout_toRightOf="@+id/textView3C"
+        android:text="TextView" />
+ 
+    <TextView
+        android:id="@+id/regionC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4C"
+        android:layout_alignBottom="@+id/textView4C"
+        android:layout_alignLeft="@+id/continentC"
+        android:text="TextView" />
+ 
+    <TextView
+        android:id="@+id/nameC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3C"
+        android:layout_toRightOf="@+id/textView3C"
+        android:text="TextView" />
+ 
+    <TextView
+        android:id="@+id/codeC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2C"
+        android:layout_alignLeft="@+id/nameC"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/delC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/nameC"
+        android:text="RowId" />
+ 
+</RelativeLayout>
